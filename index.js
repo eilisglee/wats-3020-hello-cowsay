@@ -1,8 +1,7 @@
 
-//TODO require cowsay
+const cowsay = require("cowsay");
 
-//TODO require getargs
-
+const getargs = require("./modules/get-args")
 // get first string from command line
 let textArg = getargs.getStringArg()
 
@@ -12,6 +11,6 @@ if (textArg != null) {
   console.log(cowsay.say({
     text: textArg,
     e: "oO",
-    T: "U "
+    T: "UU "
   }));
 }
